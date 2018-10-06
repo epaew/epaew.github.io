@@ -1,0 +1,30 @@
+{
+  "private": true,
+  "name": "epaew-homepage",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "heroku-postbuild": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/epaew/homepage.git"
+  },
+  "author": "epaew",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/epaew/homepage/issues"
+  },
+  "homepage": "https://gitlab.com/epaew/homepage#README",
+  "dependencies": {
+    "@nuxtjs/google-analytics": "^2.0.2",
+    "nuxt": "^2.1.0"
+  },
+  "devDependencies": {
+    "yarn": "^1.10.1"
+  }
+}
