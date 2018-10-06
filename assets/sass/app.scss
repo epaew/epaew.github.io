@@ -1,0 +1,61 @@
+/*
+ * common
+ */
+$main-bg-color: #fef4f4;
+$container-bg-color: #f5fffa;
+
+body {
+  background-color: $main-bg-color;
+}
+
+/*
+ * header
+ */
+header {
+  background-color: $main-bg-color;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.pure-menu-link {
+  .pure-menu-active>&, &:focus, &:hover {
+    background-color: transparent;
+  }
+  &.nuxt-link-exact-active {
+    background-color: #f5faff;
+  }
+}
+
+/*
+ * container
+ */
+.container {
+  background-color: $container-bg-color;
+  max-width: none;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 1em;
+  margin-bottom: 5px;
+
+  .row {
+    margin: 0px;
+  }
+  .col {
+    padding: 0px;
+  }
+}
+
+/*
+ * footer
+ */
+footer {
+  color: gray;
+  font-size: 0.8em;
+  margin-top: 20px;
+}

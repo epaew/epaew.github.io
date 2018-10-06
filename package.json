@@ -29,7 +29,8 @@
   "homepage": "https://gitlab.com/epaew/homepage#README",
   "dependencies": {
     "@nuxtjs/google-analytics": "^2.0.2",
-    "nuxt": "^2.1.0"
+    "nuxt": "^2.1.0",
+    "purecss": "^1.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
