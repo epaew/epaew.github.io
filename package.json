@@ -33,7 +33,11 @@
     "eslint-loader": "^2.1.1",
     "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-vue": "^4.7.1",
+    "node-sass": "^4.9.3",
     "prettier": "^1.14.3",
+    "pug": "^2.0.3",
+    "pug-plain-loader": "^1.0.0",
+    "sass-loader": "^7.1.0",
     "yarn": "^1.10.1"
   }
 }
