@@ -1,0 +1,42 @@
+<template lang="pug">
+.row.margin-10
+  h3 Profile
+  .col.md-3
+    img(alt="profile image" :src="profileImageUrl")
+  .col.md-9
+    dl
+      dt Name
+      dd: .col epaew (Ryo Maeda)
+      dt Job
+      dd: .col アプリケーションエンジニア
+      dt Certifications
+      dd
+        .col.md-3 2017 春
+        .col.md-9 データベーススペシャリスト試験 合格
+      dd
+        .col.md-3 2016 秋
+        .col.md-9 ネットワークスペシャリスト試験 合格
+      dd
+        .col.md-3 2015 秋
+        .col.md-9 応用情報技術者試験 合格
+      dd
+        .col.md-3 2015 春
+        .col.md-9 基本情報技術者試験 合格
+      dt Experiences
+      dd: .col Ruby, Rails
+      dd: .col SQL, MySQL
+      dd: .col JavaScript, CoffeeScript, jQuery, Vue.js
+      dd: .col HTML5, CSS3, Scss
+      dd: .col Salesforce (Force.com)
+</template>
+
+<script>
+export default {
+  data() {
+    return { profileImageUrl: process.env.profileImageUrl };
+  },
+  head() {
+    return { title: this.$route.name };
+  }
+};
+</script>
