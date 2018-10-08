@@ -1,6 +1,7 @@
 <template lang="pug">
 .row.margin-10
-  h3 Profile
+  .col
+    h3 Profile
   .col.md-3
     img(alt="profile image" :src="profileImageUrl")
   .col.md-9
@@ -9,6 +10,8 @@
       dd: .col epaew (Ryo Maeda)
       dt Job
       dd: .col アプリケーションエンジニア
+      dt Location
+      dd: .col 日本 東京都
       dt Certifications
       dd
         .col.md-3 2017 春

@@ -1,7 +1,7 @@
 <template lang="pug">
 .row.margin-10
-  h3 Links
-  .container
+  .col
+    h3 Links
     ul
       li: a(href="https://github.com/epaew" target="_blank") GitHub
       li: a(href="https://qiita.com/epaew_dev" target="_blank") Qiita
