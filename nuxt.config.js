@@ -14,8 +14,5 @@ module.exports = {
   modules: [["@nuxtjs/google-analytics", { id: "UA-127066891-1" }]],
   build: { extractCSS: { allChunks: true } },
   generate: { dir: "public" },
-  env: {
-    profileImageUrl:
-      "https://res.cloudinary.com/hbdchiunp/image/upload/v1538882414/profile_epaew.png"
-  }
+  env: {}
 };

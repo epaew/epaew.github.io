@@ -3,7 +3,7 @@
   .col
     h3 Profile
   .col.md-3
-    img(alt="profile image" :src="profileImageUrl")
+    GoogleImage(alt="profile image" :imageId="imageId")
   .col.md-9
     dl
       dt Name
@@ -34,9 +34,12 @@
 </template>
 
 <script>
+import GoogleImage from "@/components/google-image";
+
 export default {
+  components: { GoogleImage },
   data() {
-    return { profileImageUrl: process.env.profileImageUrl };
+    return { imageId: "1EipICjahOr02Jb6cSAXTo2Zoxev13Z_J" };
   },
   head() {
     return { title: this.$route.name };
