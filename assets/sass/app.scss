@@ -1,11 +1,14 @@
 /*
  * common
  */
+@import url('https://fonts.googleapis.com/css?family=Allura|Dancing+Script|Noto+Sans+JP:400');
+
 $main-bg-color: #fef4f4;
 $container-bg-color: #f5fffa;
 
 body {
   background-color: $main-bg-color;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 /*
@@ -13,9 +16,16 @@ body {
  */
 header {
   background-color: $main-bg-color;
+  font-family: 'Dancing Script', cursive;
   position: sticky;
   top: 0;
   z-index: 100;
+
+  h1 {
+    font-family: 'Allura', cursive;
+    font-size: 3.0em;
+    font-weight: bold;
+  }
 }
 
 .pure-menu-link {
@@ -32,10 +42,17 @@ header {
  */
 .container {
   background-color: $container-bg-color;
-  max-width: none;
+
+  @for $i from 2 through 6 {
+    h#{$i} {
+      font-style: italic;
+      font-family: 'Dancing Script', cursive;
+    }
+  }
 }
 
 dt {
+  font-style: italic;
   font-weight: bold;
 }
 

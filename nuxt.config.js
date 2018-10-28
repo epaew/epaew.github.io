@@ -1,6 +1,6 @@
 module.exports = {
   head: {
-    titleTemplate: "%s - epaew's home",
+    titleTemplate: "%s - epaew.net",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width,initial-scale=1.0" }
@@ -14,5 +14,7 @@ module.exports = {
   modules: [["@nuxtjs/google-analytics", { id: "UA-127066891-1" }]],
   build: { extractCSS: { allChunks: true } },
   generate: { dir: "public" },
-  env: {}
+  env: {
+    appName: "epaew.net"
+  }
 };

@@ -3,7 +3,8 @@
   .col
     h3 Profile
   .col.md-3
-    GoogleImage(alt="profile image" :imageId="imageId")
+    center
+      GoogleImage.profile(alt="profile image" :imageId="imageId")
   .col.md-9
     dl
       dt Name
@@ -14,17 +15,17 @@
       dd: .col 日本 東京都
       dt Certifications
       dd
-        .col.md-3 2017 春
-        .col.md-9 データベーススペシャリスト試験 合格
+        .col.md-2 2017 春
+        .col.md-10 データベーススペシャリスト試験 合格
       dd
-        .col.md-3 2016 秋
-        .col.md-9 ネットワークスペシャリスト試験 合格
+        .col.md-2 2016 秋
+        .col.md-10 ネットワークスペシャリスト試験 合格
       dd
-        .col.md-3 2015 秋
-        .col.md-9 応用情報技術者試験 合格
+        .col.md-2 2015 秋
+        .col.md-10 応用情報技術者試験 合格
       dd
-        .col.md-3 2015 春
-        .col.md-9 基本情報技術者試験 合格
+        .col.md-2 2015 春
+        .col.md-10 基本情報技術者試験 合格
       dt Experiences
       dd: .col Ruby, Rails
       dd: .col SQL, MySQL
@@ -46,3 +47,10 @@ export default {
   }
 };
 </script>
+
+<style>
+img.profile {
+  width: 100%;
+  max-width: 200px;
+}
+</style>
