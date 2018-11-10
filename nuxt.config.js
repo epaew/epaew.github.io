@@ -1,3 +1,5 @@
+import Articles from "./lib/articles.js";
+
 module.exports = {
   head: {
     titleTemplate: "%s - epaew.net",
@@ -14,7 +16,10 @@ module.exports = {
   ],
   modules: [["@nuxtjs/google-analytics", { id: "UA-127066891-1" }]],
   build: { extractCSS: { allChunks: true } },
-  generate: { dir: "public" },
+  generate: {
+    dir: "public",
+    routes: Articles.getRoutes
+  },
   env: {
     appName: "epaew.net"
   }

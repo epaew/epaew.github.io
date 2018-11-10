@@ -1,3 +1,5 @@
 .nuxt
+blog/summary.json
+blog/json/*
 node_modules
 public

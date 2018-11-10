@@ -20,7 +20,13 @@ export default {
   data() {
     return {
       appName: process.env.appName,
-      menus: { Top: "/", Profile: "/profile", Works: "/works", Links: "/links" }
+      menus: {
+        Top: "/",
+        Blog: "/blog",
+        Profile: "/profile",
+        Works: "/works",
+        Links: "/links"
+      }
     };
   }
 };

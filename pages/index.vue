@@ -6,7 +6,7 @@
         p 都内でアプリケーションエンジニアをしている、epaewの個人サイトです
       .row.margin-0
         h3 Blog
-        p Now building...
+        article-list(:max-per-page="5" :show-pager="false")
     .col.md-4
       .row.margin-0
         h3 Twitter
@@ -14,6 +14,7 @@
 </template>
 
 <script>
+import ArticleList from "@/components/article-list.vue";
 import { Timeline } from "vue-tweet-embed";
 
 export default {
@@ -21,6 +22,7 @@ export default {
     return { title: this.$route.name };
   },
   components: {
+    ArticleList,
     Timeline
   }
 };
