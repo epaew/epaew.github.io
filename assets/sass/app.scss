@@ -43,6 +43,7 @@ header {
  */
 .container {
   background-color: $container-bg-color;
+  padding: 20px;
 
   @for $i from 2 through 6 {
     h#{$i} {
