@@ -1,5 +1,12 @@
 <template lang="pug">
   .container
+    .text-right
+      a(
+        href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+        class="twitter-share-button"
+        data-show-count="false"
+      )
+        | Tweet
     div(v-html="bodyHtml")
     time {{ $route.params.date }}
 </template>
@@ -12,7 +19,8 @@ export default {
   },
   head() {
     return {
-      title: this.title
+      title: this.title,
+      script: [{ src: "https://platform.twitter.com/widgets.js", charset: "utf-8", body: true }]
     };
   },
   mounted() {
