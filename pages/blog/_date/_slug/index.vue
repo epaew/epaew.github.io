@@ -14,6 +14,20 @@ export default {
     return {
       title: this.title
     };
+  },
+  mounted() {
+    const links = this.$el.querySelectorAll("a");
+    for (const link of links) {
+      const href = link.attributes["href"].value;
+      const is_omitted = !href.includes("http") ? 1 : 0;
+      const is_local = href.includes("www.epaew.net") ? 1 : 0;
+
+      if (!(is_omitted ^ is_local)) {
+        const icon = `<span class="icon-exapnd2" />`;
+        link.setAttribute("target", "_blank");
+        link.insertAdjacentHTML("beforeend", icon);
+      }
+    }
   }
 };
 </script>
