@@ -51,6 +51,15 @@ header {
       font-family: 'Dancing Script', cursive;
     }
   }
+
+  pre code {
+    // &:before {
+    //   counter-increment: line;
+    //   content: counter(line) " ";
+    // }
+    border: none;
+    counter-reset: line;
+  }
 }
 
 dt {

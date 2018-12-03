@@ -12,11 +12,14 @@
 </template>
 
 <script>
+import GoogleImage from "@/components/google-image";
+
 export default {
   asyncData({ params }) {
     const Obj = require(`@/blog/json/${params.date}_${params.slug}.json`);
     return Obj;
   },
+  components: { GoogleImage },
   head() {
     return {
       title: this.title,
