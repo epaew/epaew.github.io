@@ -14,7 +14,7 @@ module.exports = {
     "@/assets/css/skyblue/css/skyblue.min.css",
     "@/assets/sass/app.scss"
   ],
-  modules: [["@nuxtjs/google-analytics", { id: "UA-127066891-1" }]],
+  modules: [],
   build: { extractCSS: { allChunks: true } },
   generate: {
     dir: "public",
