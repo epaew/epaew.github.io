@@ -1,6 +1,6 @@
 import Articles from "./lib/articles.js";
 
-module.exports = {
+export default {
   head: {
     titleTemplate: "%s - epaew.net",
     meta: [
@@ -15,7 +15,7 @@ module.exports = {
     "@/assets/sass/app.scss"
   ],
   modules: [],
-  build: { extractCSS: { allChunks: true } },
+  build: { extractCSS: true },
   generate: {
     dir: "public",
     routes: Articles.getRoutes

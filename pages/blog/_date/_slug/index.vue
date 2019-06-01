@@ -15,15 +15,21 @@
 import GoogleImage from "@/components/google-image";
 
 export default {
+  components: { GoogleImage },
   asyncData({ params }) {
     const Obj = require(`@/blog/json/${params.date}_${params.slug}.json`);
     return Obj;
   },
-  components: { GoogleImage },
   head() {
     return {
       title: this.title,
-      script: [{ src: "https://platform.twitter.com/widgets.js", charset: "utf-8", body: true }]
+      script: [
+        {
+          src: "https://platform.twitter.com/widgets.js",
+          charset: "utf-8",
+          body: true
+        }
+      ]
     };
   },
   mounted() {

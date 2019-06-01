@@ -48,7 +48,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 img.profile {
   width: 100%;
   max-width: 200px;

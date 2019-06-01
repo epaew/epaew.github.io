@@ -1,5 +1,5 @@
-<template>
-  <img :src="src_url">
+<template lang="pug">
+  img(:src="src_url")
 </template>
 
 <script>

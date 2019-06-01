@@ -1,4 +1,5 @@
 .nuxt
+assets/css/skyblue/*
 blog/summary.json
 blog/json/*
 node_modules
