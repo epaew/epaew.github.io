@@ -7,9 +7,7 @@
       center
         ul.pure-menu-list
           li.pure-menu-item(v-for="(path, label) in menus")
-            a.pure-menu-link(:href="path" :class="additionalClass(path)") {{ label }}
-            // Disable CSR to CORS problem
-            // nuxt-link.pure-menu-link(:to="path") {{ label }}
+            nuxt-link.pure-menu-link(:to="path") {{ label }}
   .container
     nuxt
   footer

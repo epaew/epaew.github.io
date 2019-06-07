@@ -6,7 +6,7 @@
         p 都内でアプリケーションエンジニアをしている、epaewの個人サイトです
       .row.margin-0
         h3 Blog
-        article-list(:articles="articles" :max-per-page="5" :show-pager="false")
+        article-list(:max-per-page="5" :show-pager="false")
     .col.md-4
       .row.margin-0
         h3 Twitter
@@ -14,14 +14,16 @@
 </template>
 
 <script>
-import ArticleMixin from "@/lib/articles-mixin.js";
+import ArticleList from "@/components/article-list.vue";
 import { Timeline } from "vue-tweet-embed";
 
 export default {
   head() {
     return { title: this.$route.name };
   },
-  components: { Timeline },
-  mixins: [ArticleMixin]
+  components: {
+    ArticleList,
+    Timeline
+  }
 };
 </script>

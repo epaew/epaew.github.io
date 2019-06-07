@@ -12,15 +12,19 @@
 </template>
 
 <script>
+import feeds from "@/blog/feeds.json";
+
 export default {
   name: "ArticleList",
   props: {
-    articles: { type: Array, required: true },
     maxPerPage: { type: Number, default: 20 },
     showPager: { type: Boolean, default: true }
   },
   data() {
     return {
+      articles: feeds.map(f =>
+        Object.assign(f, { pubDate: f.pubDate.replace(/T.+Z/, "") })
+      ),
       pageNum: 1
     };
   },

@@ -2,9 +2,15 @@
   "private": true,
   "name": "epaew.gitlab.io",
   "version": "1.0.0",
+  "babel": {
+    "presets": [
+      ["@babel/preset-env", { "targets": { "node": "current" } }]
+    ]
+  },
   "description": "",
   "scripts": {
     "dev": "nuxt",
+    "create-feeds-json": "scripts/create-feeds-json.js blog/feeds.json",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
@@ -26,6 +32,7 @@
   },
   "homepage": "https://www.epaew.net/",
   "dependencies": {
+    "@babel/register": "^7.0.0",
     "nuxt": "^2.8.0",
     "purecss": "^1.0.0",
     "rss-parser": "^3.7.1",

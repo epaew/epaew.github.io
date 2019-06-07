@@ -1,6 +1,7 @@
 .nuxt
 assets/css/skyblue/*
-blog/summary.json
-blog/json/*
+blog
 node_modules
 public
+
+!.keep
