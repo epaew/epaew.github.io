@@ -7,7 +7,9 @@
       center
         ul.pure-menu-list
           li.pure-menu-item(v-for="(path, label) in menus")
-            nuxt-link.pure-menu-link(:to="path") {{ label }}
+            a.pure-menu-link(:href="path" :class="additionalClass(path)") {{ label }}
+            // Disable CSR to CORS problem
+            // nuxt-link.pure-menu-link(:to="path") {{ label }}
   .container
     nuxt
   footer
@@ -21,13 +23,22 @@ export default {
     return {
       appName: process.env.appName,
       menus: {
-        Top: "/",
+        Home: "/",
         Blog: "/blog",
         Profile: "/profile",
         Works: "/works",
         Links: "/links"
       }
     };
+  },
+  methods: {
+    additionalClass(path) {
+      if (path === this.$route.path) {
+        return "nuxt-link-exact-active";
+      } else {
+        return "";
+      }
+    }
   }
 };
 </script>
