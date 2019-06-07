@@ -28,7 +28,8 @@
   "dependencies": {
     "nuxt": "^2.8.0",
     "purecss": "^1.0.0",
-    "vue": "^2.6.10",
+    "rss-parser": "^3.7.1",
+    "vue": "^2.0.0",
     "vue-tweet-embed": "^2.3.0"
   },
   "devDependencies": {
@@ -44,9 +45,8 @@
     "pug-lint": "^2.5.0",
     "pug-lint-loader": "^0.0.4",
     "pug-plain-loader": "^1.0.0",
-    "rss-parser": "^3.7.1",
     "sass-loader": "^7.1.0",
-    "webpack": "^4.32.2",
+    "webpack": "^4.0.0",
     "yarn": "^1.16.0"
   }
 }
