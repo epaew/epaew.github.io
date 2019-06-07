@@ -2,8 +2,8 @@
   .col
     dl.margin-bottom-20
       .row(v-for="target in targets")
-        dt {{ target.date }}
-        dd: a(:href="target.url") {{ target.title }}
+        dt {{ target.pubDate }}
+        dd: a(target="_blank" :href="target.link") {{ target.title }}
     center(v-if="showPager")
       .inline-block page:&nbsp;
       .inline-block
@@ -12,11 +12,10 @@
 </template>
 
 <script>
-import Articles from "@/lib/articles.js";
-
 export default {
   name: "ArticleList",
   props: {
+    articles: { type: Array, required: true },
     maxPerPage: { type: Number, default: 20 },
     showPager: { type: Boolean, default: true }
   },
@@ -30,15 +29,12 @@ export default {
       return Array.from(Array(this.lastPageNum).keys()).map(i => i + 1);
     },
     targets() {
-      return Articles.getArray().slice(
-        this.dataRange()[0],
-        this.dataRange()[1]
-      );
+      return this.articles.slice(this.dataRange()[0], this.dataRange()[1]);
     }
   },
   methods: {
     lastPageNum() {
-      return Math.floor(Articles.getArray().length / this.maxPerPage) + 1;
+      return Math.floor(this.articles.length / this.maxPerPage) + 1;
     },
     dataRange() {
       return [

@@ -2,18 +2,16 @@
   .row.margin-10
     .col
       h3 Blog
-      article-list
+      article-list(:articles="articles")
 </template>
 
 <script>
-import ArticleList from "@/components/article-list.vue";
+import ArticleMixin from "@/lib/articles-mixin.js";
 
 export default {
   head() {
     return { title: this.$route.name };
   },
-  components: {
-    ArticleList
-  }
+  mixins: [ArticleMixin]
 };
 </script>

@@ -47,6 +47,7 @@
     "pug-lint": "^2.5.0",
     "pug-lint-loader": "^0.0.4",
     "pug-plain-loader": "^1.0.0",
+    "rss-parser": "^3.7.1",
     "sass-loader": "^7.1.0",
     "webpack": "^4.32.2",
     "yarn": "^1.16.0"
