@@ -1,5 +1,3 @@
-import Articles from "./lib/articles.js";
-
 export default {
   head: {
     titleTemplate: "%s - epaew.net",
@@ -17,8 +15,7 @@ export default {
   modules: [],
   build: { extractCSS: true },
   generate: {
-    dir: "public",
-    routes: Articles.getRoutes
+    dir: "public"
   },
   env: {
     appName: "epaew.net"
