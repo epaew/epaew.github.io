@@ -9,32 +9,42 @@
           li.pure-menu-item(v-for="(path, label) in menus")
             nuxt-link.pure-menu-link(:to="path") {{ label }}
   .container
-    nuxt
+    nuxt(v-touch:swipe.right="swipeRight" v-touch:swipe.left="swipeLeft")
   footer
     center
-      p Copyright &copy; {{ appName }}, 2018 All Rights Reserved.
+      p Copyright &copy; {{ appName }}, 2018-2019 All Rights Reserved.
 </template>
 
 <script>
+import config from "@/global.json";
+
 export default {
   data() {
     return {
-      appName: process.env.appName,
-      menus: {
-        Home: "/",
-        Blog: "/blog",
-        Profile: "/profile",
-        Works: "/works",
-        Links: "/links"
-      }
+      appName: config.appName,
+      menus: config.menus
     };
   },
+  computed: {
+    menuValues() {
+      return Object.values(this.menus);
+    }
+  },
   methods: {
-    additionalClass(path) {
-      if (path === this.$route.path) {
-        return "nuxt-link-exact-active";
-      } else {
-        return "";
+    swipeRight() {
+      this.pushRouter(-1);
+    },
+    swipeLeft() {
+      this.pushRouter(1);
+    },
+    pushRouter(diff) {
+      if (this.$device.isDesktop) {
+        return;
+      }
+
+      let next = this.menuValues.indexOf(this.$route.path) + diff;
+      if (0 <= next && next < this.menuValues.length) {
+        this.$router.push(this.menuValues[next]);
       }
     }
   }

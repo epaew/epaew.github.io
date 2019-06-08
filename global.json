@@ -1,0 +1,10 @@
+{
+  "appName": "epaew.net",
+  "menus": {
+    "Home": "/",
+    "Blog": "/blog",
+    "Profile": "/profile",
+    "Works": "/works",
+    "Links": "/links"
+  }
+}

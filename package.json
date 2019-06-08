@@ -41,10 +41,12 @@
   "dependencies": {
     "@babel/register": "^7.0.0",
     "nuxt": "^2.8.0",
+    "nuxt-device-detect": "^1.1.5",
     "purecss": "^1.0.0",
     "rss-parser": "^3.7.1",
     "vue": "^2.0.0",
-    "vue-tweet-embed": "^2.3.0"
+    "vue-tweet-embed": "^2.3.0",
+    "vue2-touch-events": "^2.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
@@ -61,6 +63,6 @@
     "pug-plain-loader": "^1.0.0",
     "sass-loader": "^7.1.0",
     "webpack": "^4.0.0",
-    "yarn": "^1.16.0"
+    "yarn": "1.16.0"
   }
 }

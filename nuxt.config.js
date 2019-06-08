@@ -12,12 +12,10 @@ export default {
     "@/assets/css/skyblue/css/skyblue.min.css",
     "@/assets/sass/app.scss"
   ],
-  modules: [],
+  modules: ["nuxt-device-detect"],
+  plugins: ["@/plugins/vue-touch-events.js"],
   build: { extractCSS: true },
   generate: {
     dir: "public"
-  },
-  env: {
-    appName: "epaew.net"
   }
 };
