@@ -87,3 +87,16 @@ footer {
   font-size: 0.8em;
   margin-top: 20px;
 }
+
+/*
+ * transition
+ */
+.page {
+  &-enter, &-leave {
+    transform: translate(5px, 30px);
+    opacity: 0;
+  }
+  &-enter-active, &-leave-active {
+    transition: all .3s ease-out;
+  }
+}
