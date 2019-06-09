@@ -12,10 +12,21 @@ export default {
     "@/assets/css/skyblue/css/skyblue.min.css",
     "@/assets/sass/app.scss"
   ],
-  modules: ["nuxt-compress", "nuxt-device-detect"],
+  modules: [
+    "nuxt-compress",
+    "nuxt-device-detect",
+    "@nuxtjs/sitemap" // always declare the sitemap module at end of array
+  ],
   plugins: ["@/plugins/vue-touch-events.js"],
   build: { extractCSS: true },
   generate: {
     dir: "public"
+  },
+  sitemap: {
+    hostname: "https://www.epaew.net",
+    routes: [
+      { url: "/", changefreq: "daily" },
+      { url: "/articles", changefreq: "daily" }
+    ]
   }
 };
