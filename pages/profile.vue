@@ -37,7 +37,7 @@ export default {
   mixins: [TransitionMixin],
   data() {
     return {
-      imageId: "1EipICjahOr02Jb6cSAXTo2Zoxev13Z_J",
+      imageId: "1XYummYJxwkqbnO6cN-pha6U-HCcUxKq7",
       certs: [
         ["2017 春", "データベーススペシャリスト"],
         ["2016 秋", "ネットワークスペシャリスト"],
