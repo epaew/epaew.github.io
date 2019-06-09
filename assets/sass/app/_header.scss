@@ -1,0 +1,26 @@
+/*
+ * header
+ */
+header {
+  background-color: $main-bg-color;
+  font-family: 'Dancing Script', cursive;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  h1 {
+    color: #888;
+    font-family: 'Allura', cursive;
+    font-size: 3.0em;
+    font-weight: bold;
+  }
+}
+
+.pure-menu-link {
+  .pure-menu-active>&, &:focus, &:hover {
+    background-color: transparent;
+  }
+  &.nuxt-link-exact-active {
+    background-color: #f5faff;
+  }
+}

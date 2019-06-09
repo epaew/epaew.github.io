@@ -1,0 +1,32 @@
+/*
+ * transition
+ */
+.page {
+  &-enter, &-leave {
+    transform: translateY(50px);
+  }
+}
+
+.slide-right {
+  &-enter, &-leave {
+    transform: translateX(-30px);
+  }
+}
+
+.slide-left {
+  &-enter, &-leave {
+    transform: translateX(30px);
+  }
+}
+.page, .slide-right, .slide-left {
+  &-enter, &-leave {
+    opacity: 0;
+
+    @include md {
+      transform: none;
+    }
+  }
+  &-enter-active, &-leave-active {
+    transition: all .8s ease-out;
+  }
+}

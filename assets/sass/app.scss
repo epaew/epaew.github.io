@@ -1,102 +1,11 @@
-/*
- * common
- */
+@import '../css/skyblue/sass/skyblue/variables';
+@import '../css/skyblue/sass/skyblue/mixins';
+
 @import url('https://fonts.googleapis.com/css?family=Allura|Dancing+Script|Noto+Sans+JP:400');
+@import './app/variables';
 
-$main-bg-color: #fef4f4;
-$container-bg-color: #f5fffa;
-
-body {
-  background-color: $main-bg-color;
-  font-family: 'Noto Sans JP', sans-serif;
-}
-
-/*
- * header
- */
-header {
-  background-color: $main-bg-color;
-  font-family: 'Dancing Script', cursive;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-
-  h1 {
-    color: #888;
-    font-family: 'Allura', cursive;
-    font-size: 3.0em;
-    font-weight: bold;
-  }
-}
-
-.pure-menu-link {
-  .pure-menu-active>&, &:focus, &:hover {
-    background-color: transparent;
-  }
-  &.nuxt-link-exact-active {
-    background-color: #f5faff;
-  }
-}
-
-/*
- * container
- */
-.container {
-  background-color: $container-bg-color;
-  padding: 20px;
-
-  @for $i from 2 through 6 {
-    h#{$i} {
-      font-style: italic;
-      font-family: 'Dancing Script', cursive;
-    }
-  }
-
-  pre code {
-    // &:before {
-    //   counter-increment: line;
-    //   content: counter(line) " ";
-    // }
-    border: none;
-    counter-reset: line;
-  }
-}
-
-dt {
-  font-style: italic;
-  font-weight: bold;
-}
-
-dd {
-  margin-left: 1em;
-  margin-bottom: 5px;
-
-  .row {
-    margin: 0px;
-  }
-  .col {
-    padding: 0px;
-  }
-}
-
-/*
- * footer
- */
-footer {
-  color: gray;
-  font-size: 0.8em;
-  margin-top: 20px;
-}
-
-/*
- * transition
- */
-.page {
-  &-enter, &-leave {
-    transform: translate(5px, 30px);
-    opacity: 0;
-  }
-  &-enter-active, &-leave-active {
-    transition: all .3s ease-out;
-  }
-}
+@import './app/body';
+@import './app/container';
+@import './app/footer';
+@import './app/header';
+@import './app/transition';
