@@ -1,6 +1,6 @@
 .nuxt
 assets/css/skyblue/*
-blog
+articles
 node_modules
 public
 

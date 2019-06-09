@@ -10,40 +10,49 @@
       dt Name
       dd: .col epaew (Ryo Maeda)
       dt Job
-      dd: .col アプリケーションエンジニア
+      dd: .col Application Engineer
       dt Location
-      dd: .col 日本 東京都
+      dd: .col Tokyo, JP
       dt Certifications
-      dd
-        .col.md-2 2017 春
-        .col.md-10 データベーススペシャリスト試験 合格
-      dd
-        .col.md-2 2016 秋
-        .col.md-10 ネットワークスペシャリスト試験 合格
-      dd
-        .col.md-2 2015 秋
-        .col.md-10 応用情報技術者試験 合格
-      dd
-        .col.md-2 2015 春
-        .col.md-10 基本情報技術者試験 合格
+      dd(v-for="cert in certs")
+        .col.sm-3 {{ cert[0] }}
+        .col.sm-9 {{ cert[1] }}
       dt Experiences
-      dd: .col Ruby, Rails
-      dd: .col SQL, MySQL
-      dd: .col JavaScript, CoffeeScript, jQuery, Vue.js
-      dd: .col HTML5, CSS3, Scss
-      dd: .col Salesforce (Force.com)
+      dd(v-for="(names, category) in experiences")
+        .col.md-5.margin-bottom-10 {{ category }}
+        .col.md-7
+          ul
+            li(v-for="name in names") {{ name }}
 </template>
 
 <script>
 import GoogleImage from "@/components/google-image";
+import TransitionMixin from "@/lib/transition-mixin.js";
 
 export default {
-  components: { GoogleImage },
-  data() {
-    return { imageId: "1EipICjahOr02Jb6cSAXTo2Zoxev13Z_J" };
-  },
   head() {
     return { title: this.$route.name };
+  },
+  components: { GoogleImage },
+  mixins: [TransitionMixin],
+  data() {
+    return {
+      imageId: "1EipICjahOr02Jb6cSAXTo2Zoxev13Z_J",
+      certs: [
+        ["2017 春", "データベーススペシャリスト"],
+        ["2016 秋", "ネットワークスペシャリスト"],
+        ["2015 秋", "応用情報技術者"],
+        ["2015 春", "基本情報技術者"]
+      ],
+      experiences: {
+        "Languages & Frameworks": [
+          "Ruby (Rails5)",
+          "JavaScript (jQuery, CoffeeScript, Vue.js)"
+        ],
+        RDBMSs: ["PostgreSQL", "MySQL"],
+        Others: ["HTML5", "SCSS", "Salesforce (Force.com)"]
+      }
+    };
   }
 };
 </script>

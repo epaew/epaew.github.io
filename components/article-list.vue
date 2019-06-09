@@ -3,7 +3,9 @@
     dl.margin-bottom-20
       .row(v-for="target in targets")
         dt {{ target.pubDate }}
-        dd: a(target="_blank" :href="target.link") {{ target.title }}
+        dd
+          a(target="_blank" :href="target.link") {{ target.title }}
+          aside via&nbsp;{{ target.key }}
     center(v-if="showPager")
       .inline-block page:&nbsp;
       .inline-block
@@ -12,7 +14,7 @@
 </template>
 
 <script>
-import feeds from "@/blog/feeds.json";
+import feeds from "@/articles/feeds.json";
 
 export default {
   name: "ArticleList",

@@ -2,16 +2,27 @@
 .row.margin-10
   .col
     h3 Links
-    ul
-      li: a(href="https://github.com/epaew" target="_blank") GitHub
-      li: a(href="https://qiita.com/epaew_dev" target="_blank") Qiita
-      li: a(href="https://twitter.com/epaew_dev" target="_blank") Twitter
+    ul: li(v-for="(url, name) in links")
+      a(:href="url" target="_blank") {{ name }}
 </template>
 
 <script>
+import TransitionMixin from "@/lib/transition-mixin.js";
+
 export default {
   head() {
     return { title: this.$route.name };
+  },
+  mixins: [TransitionMixin],
+  data() {
+    return {
+      links: {
+        GitHub: "https://github.com/epaew",
+        Twitter: "https://twitter.com/epaew_dev",
+        Qiita: "https://qiita.com/epaew_dev",
+        "epaew's blog": "https://epaew.hatenablog.com/"
+      }
+    };
   }
 };
 </script>

@@ -12,9 +12,12 @@
 </template>
 
 <script>
+import TransitionMixin from "@/lib/transition-mixin.js";
+
 export default {
   head() {
     return { title: this.$route.name };
-  }
+  },
+  mixins: [TransitionMixin]
 };
 </script>

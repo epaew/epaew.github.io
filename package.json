@@ -17,7 +17,7 @@
   "description": "",
   "scripts": {
     "dev": "nuxt",
-    "create-feeds-json": "scripts/create-feeds-json.js blog/feeds.json",
+    "create-feeds-json": "scripts/create-feeds-json.js articles/feeds.json",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
