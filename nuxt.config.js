@@ -12,7 +12,7 @@ export default {
     "@/assets/css/skyblue/css/skyblue.min.css",
     "@/assets/sass/app.scss"
   ],
-  modules: ["nuxt-device-detect"],
+  modules: ["nuxt-compress", "nuxt-device-detect"],
   plugins: ["@/plugins/vue-touch-events.js"],
   build: { extractCSS: true },
   generate: {
