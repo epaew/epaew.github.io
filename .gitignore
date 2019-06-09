@@ -1,7 +1,11 @@
-.nuxt
+# want to keep
+articles/*
 assets/css/skyblue/*
-articles
-node_modules
-public
 
 !.keep
+
+
+# do not want to keep
+.nuxt
+node_modules
+public
