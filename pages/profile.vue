@@ -9,6 +9,8 @@
     dl
       dt Name
       dd: .col epaew (Ryo Maeda)
+      dt Age
+      dd: .col {{ age }}
       dt Job
       dd: .col Application Engineer
       dt Location
@@ -50,9 +52,15 @@ export default {
           "JavaScript (jQuery, CoffeeScript, Vue.js)"
         ],
         RDBMSs: ["PostgreSQL", "MySQL"],
-        Others: ["HTML5", "SCSS", "Salesforce (Force.com)"]
+        Others: ["HTML5 / CSS3", "Sass (SCSS)", "Salesforce (Force.com)"]
       }
     };
+  },
+  computed: {
+    age() {
+      let diff = Date.now() - Date.parse("1990/12/27"); // millisec
+      return new Date(diff).getFullYear() - 1970;
+    }
   }
 };
 </script>
