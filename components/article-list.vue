@@ -32,10 +32,10 @@ export default {
   },
   computed: {
     pages() {
-      return Array.from(Array(this.lastPageNum).keys()).map(i => i + 1);
+      return new Array(this.lastPageNum()).fill(0).map((_, idx) => idx + 1);
     },
     targets() {
-      return this.articles.slice(this.dataRange()[0], this.dataRange()[1]);
+      return this.articles.slice(...this.dataRange());
     }
   },
   methods: {
@@ -45,7 +45,7 @@ export default {
     dataRange() {
       return [
         this.maxPerPage * (this.pageNum - 1),
-        this.maxPerPage * this.pageNum - 1
+        this.maxPerPage * this.pageNum
       ];
     }
   }
