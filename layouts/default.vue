@@ -12,7 +12,7 @@
     nuxt(v-touch:swipe.right="swipeRight" v-touch:swipe.left="swipeLeft")
   footer
     center
-      p Copyright &copy; {{ appName }}, 2018-2019 All Rights Reserved.
+      p Copyright &copy; {{ appName }}. All rights reserved.
 </template>
 
 <script>
