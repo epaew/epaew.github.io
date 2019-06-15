@@ -4,21 +4,18 @@
 .page {
   &-enter, &-leave {
     transform: translateY(50px);
-    -webkit-transform: translateY(50px);
   }
 }
 
 .slide-right {
   &-enter, &-leave {
     transform: translateX(-30px);
-    -webkit-transform: translateX(-30px);
   }
 }
 
 .slide-left {
   &-enter, &-leave {
     transform: translateX(30px);
-    -webkit-transform: translateX(30px);
   }
 }
 .page, .slide-right, .slide-left {
@@ -27,11 +24,9 @@
 
     @include md {
       transform: none;
-    -webkit-transform: none;
     }
   }
   &-enter-active, &-leave-active {
     transition: all .8s ease-out;
-    -webkit-transition: -webkit-transform 2s ease-out;
   }
 }
