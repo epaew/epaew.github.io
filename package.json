@@ -52,8 +52,8 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
-    "eslint": "^5.16.0",
-    "eslint-config-prettier": "^4.3.0",
+    "eslint": "^6.2.1",
+    "eslint-config-prettier": "^6.1.0",
     "eslint-loader": "^2.1.2",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-vue": "^5.2.2",
@@ -64,7 +64,6 @@
     "pug-lint-loader": "^0.0.4",
     "pug-plain-loader": "^1.0.0",
     "sass-loader": "^7.1.0",
-    "webpack": "^4.0.0",
-    "yarn": "1.16.0"
+    "webpack": "^4.0.0"
   }
 }
