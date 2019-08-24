@@ -40,10 +40,10 @@
   "homepage": "https://www.epaew.net/",
   "dependencies": {
     "@babel/register": "^7.0.0",
+    "@nuxtjs/device": "^1.2.2",
     "@nuxtjs/sitemap": "^1.2.0",
     "nuxt": "^2.8.0",
     "nuxt-compress": "^1.0.2",
-    "nuxt-device-detect": "^1.1.5",
     "purecss": "^1.0.0",
     "rss-parser": "^3.7.1",
     "vue": "^2.0.0",

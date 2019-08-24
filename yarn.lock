@@ -962,6 +962,11 @@
     webpack-node-externals "^1.7.2"
     webpackbar "^4.0.0"
 
+"@nuxtjs/device@^1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/device/-/device-1.2.2.tgz#60ee910d976dd4a092e815ef8ce72620225e8df5"
+  integrity sha512-zIhuIbNZycSebVLSvrKf4SUDMopGJT6qoz2MFMRYmmmi+G/RnX8qGy7hiYNhQ+dq9iP7LG8FFiKr4G15VJv1dQ==
+
 "@nuxtjs/sitemap@^1.2.0":
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/@nuxtjs/sitemap/-/sitemap-1.3.0.tgz#4c83a6c845fea3d57953a7df1f1d451b5b42527b"
@@ -5551,11 +5556,6 @@ nuxt-compress@^1.0.2:
   dependencies:
     brotli-webpack-plugin "^1.1.0"
     compression-webpack-plugin "^2.0.0"
-
-nuxt-device-detect@^1.1.5:
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/nuxt-device-detect/-/nuxt-device-detect-1.1.5.tgz#a55d5ee5d6866186832fd411b514a974372d063e"
-  integrity sha512-m+mHMg1GgqHBNFJxtefy1MFKaVYafTskhb3QzGRGLOqwxmoFLiMlf9bbJqKM/kpqas0rXfeIO098fpNaQAK31w==
 
 nuxt@^2.8.0:
   version "2.9.1"

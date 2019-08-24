@@ -14,7 +14,7 @@ export default {
   ],
   modules: [
     "nuxt-compress",
-    "nuxt-device-detect",
+    "@nuxtjs/device",
     "@nuxtjs/sitemap" // always declare the sitemap module at end of array
   ],
   plugins: ["@/plugins/vue-touch-events.js"],
