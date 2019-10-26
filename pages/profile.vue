@@ -14,7 +14,7 @@
       dt Job
       dd: .col Application Engineer
       dt Location
-      dd: .col Tokyo, JP
+      dd: .col Tokyo, Japan
       dt Certifications
       dd(v-for="cert in certs")
         .col.sm-3 {{ cert[0] }}
@@ -47,18 +47,16 @@ export default {
         ["2015 春", "基本情報技術者"]
       ],
       experiences: {
-        "Languages & Frameworks": [
-          "Ruby (Rails5)",
-          "JavaScript (jQuery, CoffeeScript, Vue.js)"
-        ],
+        Languages: ["Ruby2.1~", "JavaScript (Browser w/o IE, Node.js)"],
+        Frameworks: ["Rails5~", "jQuery", "Vue.js (Nuxt.js)"],
         RDBMSs: ["PostgreSQL", "MySQL"],
-        Others: ["HTML5 / CSS3", "Sass (SCSS)", "Salesforce (Force.com)"]
+        Others: ["HTML5 / CSS3", "Sass (SCSS)", "Docker", "Webpack4"]
       }
     };
   },
   computed: {
     age() {
-      let diff = Date.now() - Date.parse("1990/12/27"); // millisec
+      const diff = Date.now() - Date.parse("1990/12/27"); // millisec
       return new Date(diff).getFullYear() - 1970;
     }
   }
