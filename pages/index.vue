@@ -20,13 +20,13 @@ import TransitionMixin from "@/lib/transition-mixin.js";
 import { Timeline } from "vue-tweet-embed";
 
 export default {
-  head() {
-    return { title: this.$route.name };
-  },
   components: {
     ArticleList,
     Timeline
   },
-  mixins: [TransitionMixin]
+  mixins: [TransitionMixin],
+  head() {
+    return { title: this.$route.name };
+  }
 };
 </script>

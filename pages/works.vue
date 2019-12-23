@@ -21,9 +21,9 @@
 import TransitionMixin from "@/lib/transition-mixin.js";
 
 export default {
+  mixins: [TransitionMixin],
   head() {
     return { title: this.$route.name };
-  },
-  mixins: [TransitionMixin]
+  }
 };
 </script>

@@ -10,12 +10,12 @@ import ArticleList from "@/components/article-list.vue";
 import TransitionMixin from "@/lib/transition-mixin.js";
 
 export default {
-  head() {
-    return { title: this.$route.name };
-  },
   components: {
     ArticleList
   },
-  mixins: [TransitionMixin]
+  mixins: [TransitionMixin],
+  head() {
+    return { title: this.$route.name };
+  }
 };
 </script>

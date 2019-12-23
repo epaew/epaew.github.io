@@ -32,9 +32,6 @@ import GoogleImage from "@/components/google-image";
 import TransitionMixin from "@/lib/transition-mixin.js";
 
 export default {
-  head() {
-    return { title: this.$route.name };
-  },
   components: { GoogleImage },
   mixins: [TransitionMixin],
   data() {
@@ -59,6 +56,9 @@ export default {
       const diff = Date.now() - Date.parse("1990/12/27"); // millisec
       return new Date(diff).getFullYear() - 1970;
     }
+  },
+  head() {
+    return { title: this.$route.name };
   }
 };
 </script>

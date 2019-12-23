@@ -10,9 +10,6 @@
 import TransitionMixin from "@/lib/transition-mixin.js";
 
 export default {
-  head() {
-    return { title: this.$route.name };
-  },
   mixins: [TransitionMixin],
   data() {
     return {
@@ -23,6 +20,9 @@ export default {
         "epaew's blog": "https://epaew.hatenablog.com/"
       }
     };
+  },
+  head() {
+    return { title: this.$route.name };
   }
 };
 </script>
