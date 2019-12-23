@@ -12,7 +12,7 @@
       dt Age
       dd: .col {{ age }}
       dt Job
-      dd: .col Application Engineer
+      dd: .col Web application developer
       dt Location
       dd: .col Tokyo, Japan
       dt Certifications
@@ -44,10 +44,28 @@ export default {
         ["2015 春", "基本情報技術者"]
       ],
       experiences: {
-        Languages: ["Ruby2.1~", "JavaScript (Browser w/o IE, Node.js)"],
-        Frameworks: ["Rails5~", "jQuery", "Vue.js (Nuxt.js)"],
+        Languages: ["Ruby 2.1~", "JavaScript/TypeScript"],
+        Frameworks: [
+          "Rails 4.2~",
+          "jQuery",
+          "Vue.js (Nuxt.js)",
+          "React.js",
+          "Serverless Framework"
+        ],
         RDBMSs: ["PostgreSQL", "MySQL"],
-        Others: ["HTML5 / CSS3", "Sass (SCSS)", "Docker", "Webpack4"]
+        "CI/CDs": [
+          "GitHub Actions",
+          "GitLab CI/CD",
+          "Bitbucket Pipelines",
+          "Travis CI"
+        ],
+        Others: [
+          "HTML5 / CSS3",
+          "Sass (SCSS)",
+          "Docker",
+          "Webpack 4",
+          "Terraform"
+        ]
       }
     };
   },
