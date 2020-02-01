@@ -39,13 +39,13 @@
   },
   "homepage": "https://www.epaew.net/",
   "dependencies": {
-    "@babel/register": "^7.0.0",
-    "@nuxtjs/device": "^1.2.2",
+    "@babel/register": "^7.8.3",
+    "@nuxtjs/device": "^1.2.6",
     "@nuxtjs/sitemap": "^2.0.0",
     "nuxt": "^2.8.0",
-    "nuxt-compress": "^1.0.2",
+    "nuxt-compress": "^1.1.0",
     "purecss": "^1.0.0",
-    "rss-parser": "^3.7.1",
+    "rss-parser": "^3.7.4",
     "vue": "^2.0.0",
     "vue-tweet-embed": "^2.3.0",
     "vue2-touch-events": "^2.0.0"
@@ -53,17 +53,17 @@
   "devDependencies": {
     "babel-eslint": "^10.0.1",
     "eslint": "^6.2.1",
-    "eslint-config-prettier": "^6.1.0",
+    "eslint-config-prettier": "^6.10.0",
     "eslint-loader": "^3.0.2",
     "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-vue": "^6.0.1",
-    "node-sass": "^4.12.0",
+    "eslint-plugin-vue": "^6.1.2",
+    "node-sass": "^4.13.1",
     "prettier": "^1.17.1",
     "pug": "^2.0.3",
     "pug-lint": "^2.5.0",
     "pug-lint-loader": "^0.0.4",
     "pug-plain-loader": "^1.0.0",
-    "sass-loader": "^8.0.0",
-    "webpack": "^4.0.0"
+    "sass-loader": "^8.0.2",
+    "webpack": "^4.41.5"
   }
 }
