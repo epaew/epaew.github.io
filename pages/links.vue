@@ -1,7 +1,9 @@
 <template lang="pug">
 .row.margin-10
   .col
-    h3 Links
+    .row.sm-margin-x-0
+      h3 Links
+    .row.margin-x-0
     ul: li(v-for="(url, name) in links")
       a(:href="url" target="_blank") {{ name }}
 </template>

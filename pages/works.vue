@@ -1,7 +1,8 @@
 <template lang="pug">
 .row.margin-10
   .col
-    h3 Works
+    .row.sm-margin-x-0
+      h3 Works
     dl
       dt tmux-erb-parser
       dd: .col

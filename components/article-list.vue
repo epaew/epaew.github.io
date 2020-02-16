@@ -1,7 +1,8 @@
 <template lang="pug">
+.row
   .col
     dl.margin-bottom-20
-      .row(v-for="target in targets")
+      .row.margin-x-0(v-for="target in targets")
         dt {{ target.pubDate }}
         dd
           a(target="_blank" :href="target.link") {{ target.title }}

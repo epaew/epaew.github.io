@@ -1,7 +1,8 @@
 <template lang="pug">
 .row.margin-10
   .col
-    h3 Profile
+    .row.sm-margin-x-0
+      h3 Profile
   .col.md-3
     center
       GoogleImage.profile(alt="profile image" :imageId="imageId")

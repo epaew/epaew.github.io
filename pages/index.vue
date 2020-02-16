@@ -1,16 +1,18 @@
 <template lang="pug">
   .row.margin-10
     .col.md-8
-      .row.margin-0
+      .row.sm-margin-x-0
         h3 About
+      .row: .col
         p 都内でアプリケーションエンジニアをしている、epaewの個人サイトです
-      .row.margin-0
+      .row.sm-margin-x-0
         h3 New Articles
-        article-list(:max-per-page="5" :show-pager="false")
+      article-list(:max-per-page="5" :show-pager="false")
     .col.md-4
-      .row.margin-0
+      .row.sm-margin-x-0
         h3 Twitter
-        Timeline(id="epaew_dev" sourceType="profile" :options="{ tweetLimit: '5' }")
+      .row.sm-margin-x-0.twitter-timeline
+        Timeline(id="epaew_dev" sourceType="profile" :options="{ tweetLimit: '15' }")
 </template>
 
 <script>

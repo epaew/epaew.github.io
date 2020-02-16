@@ -1,8 +1,9 @@
 <template lang="pug">
-  .row.margin-10
-    .col
+.row.margin-10
+  .col
+    .row.sm-margin-x-0
       h3 Articles
-      article-list
+    article-list
 </template>
 
 <script>

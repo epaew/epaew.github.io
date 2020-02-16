@@ -11,6 +11,11 @@
       font-family: 'Dancing Script', cursive;
     }
   }
+
+  .row.twitter-timeline {
+    max-height: 30em;
+    overflow-y: scroll;
+  }
 }
 
 dt {
