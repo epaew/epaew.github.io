@@ -1,6 +1,6 @@
 <template lang="pug">
   .row.margin-10
-    .col.md-8
+    .col.lg-8
       .row.sm-margin-x-0
         h3 About
       .row: .col
@@ -8,10 +8,10 @@
       .row.sm-margin-x-0
         h3 New Articles
       article-list(:max-per-page="5" :show-pager="false")
-    .col.md-4
+    .col.lg-4
       .row.sm-margin-x-0
         h3 Twitter
-      .row.sm-margin-x-0.twitter-timeline
+      .row.twitter-timeline
         Timeline(id="epaew_dev" sourceType="profile" :options="{ tweetLimit: '15' }")
 </template>
 

@@ -13,8 +13,17 @@
   }
 
   .row.twitter-timeline {
-    max-height: 30em;
-    overflow-y: scroll;
+    max-width: 350px;
+
+    @include sm {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @include lg {
+      max-height: 30em;
+      overflow-y: scroll;
+    }
   }
 }
 
