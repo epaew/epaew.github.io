@@ -45,7 +45,7 @@
     "nuxt": "^2.8.0",
     "nuxt-compress": "^1.1.0",
     "purecss": "^1.0.0",
-    "rss-parser": "^3.7.4",
+    "rss-parser": "^3.7.5",
     "vue": "^2.0.0",
     "vue-tweet-embed": "^2.3.0",
     "vue2-touch-events": "^2.0.0"
