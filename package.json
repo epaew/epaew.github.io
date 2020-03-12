@@ -64,6 +64,6 @@
     "pug-lint-loader": "^0.0.4",
     "pug-plain-loader": "^1.0.0",
     "sass-loader": "^8.0.2",
-    "webpack": "^4.41.5"
+    "webpack": "^4.42.0"
   }
 }
