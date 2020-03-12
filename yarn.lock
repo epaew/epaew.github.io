@@ -1026,10 +1026,10 @@
     webpack-node-externals "^1.7.2"
     webpackbar "^4.0.0"
 
-"@nuxtjs/device@^1.2.6":
-  version "1.2.6"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/device/-/device-1.2.6.tgz#034785fd8268f3fdc9b93a0897a33e91224b565f"
-  integrity sha512-jedjve2Rxu+3sUKzeXIaTPyLpdHFklh9OzoC0VBQ1/dAolu8a+Enez0xg34hZra/94irUlake+uh3usjBLcS+g==
+"@nuxtjs/device@^1.2.7":
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/device/-/device-1.2.7.tgz#ccb6f33b1eed0c7725ab8668526da92534624154"
+  integrity sha512-Vyhw2ZSaUigFtRed5DjscV9jKevenvgFD5527rVAUzpSUQTcLau8NN+Zdf463bUr5xLwCDl7wUA4+1rGROmA5w==
 
 "@nuxtjs/sitemap@^2.0.0":
   version "2.0.1"

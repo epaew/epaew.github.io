@@ -40,7 +40,7 @@
   "homepage": "https://www.epaew.net/",
   "dependencies": {
     "@babel/register": "^7.8.3",
-    "@nuxtjs/device": "^1.2.6",
+    "@nuxtjs/device": "^1.2.7",
     "@nuxtjs/sitemap": "^2.0.0",
     "nuxt": "^2.8.0",
     "nuxt-compress": "^1.1.0",
