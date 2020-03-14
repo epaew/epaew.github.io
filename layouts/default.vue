@@ -12,8 +12,7 @@
       v-toolbar-title
         h1 {{ appName }}
     v-content
-      v-container
-        nuxt
+      nuxt
     v-footer(app absolute inset)
       span
         p Copyright &copy; 2018-{{ currentYear }} {{ appName }}
