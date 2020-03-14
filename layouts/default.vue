@@ -1,93 +1,75 @@
-<template>
-  <v-app dark>
-    <v-navigation-drawer
-      v-model="drawer"
-      :mini-variant="miniVariant"
-      :clipped="clipped"
-      fixed
-      app
-    >
-      <v-list>
-        <v-list-item
-          v-for="(item, i) in items"
-          :key="i"
-          :to="item.to"
-          router
-          exact
-        >
-          <v-list-item-action>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title v-text="item.title" />
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
-    <v-app-bar :clipped-left="clipped" fixed app>
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-btn icon @click.stop="miniVariant = !miniVariant">
-        <v-icon>mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
-      </v-btn>
-      <v-btn icon @click.stop="clipped = !clipped">
-        <v-icon>mdi-application</v-icon>
-      </v-btn>
-      <v-btn icon @click.stop="fixed = !fixed">
-        <v-icon>mdi-minus</v-icon>
-      </v-btn>
-      <v-toolbar-title v-text="title" />
-      <v-spacer />
-      <v-btn icon @click.stop="rightDrawer = !rightDrawer">
-        <v-icon>mdi-menu</v-icon>
-      </v-btn>
-    </v-app-bar>
-    <v-content>
-      <v-container>
-        <nuxt />
-      </v-container>
-    </v-content>
-    <v-navigation-drawer v-model="rightDrawer" :right="right" temporary fixed>
-      <v-list>
-        <v-list-item @click.native="right = !right">
-          <v-list-item-action>
-            <v-icon light>
-              mdi-repeat
-            </v-icon>
-          </v-list-item-action>
-          <v-list-item-title>Switch drawer (click me)</v-list-item-title>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
-    <v-footer :fixed="fixed" app>
-      <span>&copy; {{ new Date().getFullYear() }}</span>
-    </v-footer>
-  </v-app>
+<template lang="pug">
+  v-app
+    v-navigation-drawer(app clipped fixed v-model="isDrawerOpen")
+      v-subheader Contents
+      contents-list
+      template(v-slot:append)
+        v-divider
+        links-list
+    v-app-bar(app clipped-left fixed)
+      v-app-bar-nav-icon(v-if="!isDrawerOpen" @click.stop="toggleDrawer")
+      div(v-if="isDrawerOpen" :style="{ height: '48px', width: '48px', marginLeft: '-12px' }")
+      v-toolbar-title
+        h1 {{ appName }}
+    v-content
+      v-container
+        nuxt
+    v-footer(app absolute inset)
+      span
+        p Copyright &copy; 2018-{{ currentYear }} {{ appName }}
 </template>
 
-<script>
-export default {
-  data() {
+<script lang="ts">
+import Vue from 'vue'
+import { ContentsList, LinksList } from '@/components/layouts'
+
+type DataType = {
+  appName: string
+  isDrawerOpen: boolean | null
+}
+
+export default Vue.extend({
+  components: { ContentsList, LinksList },
+  data(): DataType {
     return {
-      clipped: false,
-      drawer: false,
-      fixed: false,
-      items: [
-        {
-          icon: 'mdi-apps',
-          title: 'Welcome',
-          to: '/'
-        },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
-        }
-      ],
-      miniVariant: false,
-      right: true,
-      rightDrawer: false,
-      title: 'Vuetify.js'
+      appName: 'epaew.net',
+      isDrawerOpen: null
+    }
+  },
+  computed: {
+    currentYear() {
+      return new Date().getFullYear()
+    }
+  },
+  methods: {
+    toggleDrawer() {
+      this.isDrawerOpen = !this.isDrawerOpen
     }
   }
-}
+})
 </script>
+
+<style scoped lang="scss">
+.v-toolbar__title {
+  margin: 0 auto;
+
+  // .v-application--is-ltr .v-toolbar__content > .v-btn.v-btn--icon:first-child + .v-toolbar__title
+  padding-left: 20px;
+  padding-right: 56px;
+
+  h1 {
+    color: #888;
+    font-family: 'Allura', cursive;
+    font-size: 2.6em;
+  }
+}
+
+.v-footer {
+  justify-content: flex-end;
+
+  // https://github.com/vuetifyjs/vuetify/issues/8128
+  &--absolute {
+    width: auto;
+  }
+}
+</style>
