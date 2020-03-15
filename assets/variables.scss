@@ -2,3 +2,15 @@
 //
 // The variables you want to modify
 // $font-size-root: 20px;
+
+$main-bg-color: #fef4f4;
+$frame-bg-color: #f5fffa;
+
+$body-font-family: 'Noto Sans JP', sans-serif;
+$heading-font-family: 'Dancing Script', cursive;
+
+$material-light: (
+  'app-bar': $frame-bg-color,
+  'background': $main-bg-color,
+  'navigation-drawer': $frame-bg-color,
+)
