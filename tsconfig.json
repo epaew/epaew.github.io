@@ -28,6 +28,13 @@
       "vuetify"
     ]
   },
+  "files": [
+    "shims-vue.d.ts"
+  ],
+  "include": [
+    "components/**/*.ts",
+    "components/**/*.vue"
+  ],
   "exclude": [
     "node_modules"
   ]
