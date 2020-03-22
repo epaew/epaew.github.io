@@ -61,9 +61,5 @@ export default Vue.extend({
     padding-bottom: 6px;
     padding-top: 6px;
   }
-
-  & &__title {
-    line-height: 1.5;
-  }
 }
 </style>
