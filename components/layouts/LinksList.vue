@@ -2,7 +2,7 @@
   v-list
     v-list-group
       template(v-slot:activator)
-        v-list-item-title Links
+        v-list-item-title.title.font-weight-bold Links
       v-list-item(
         target="_blank"
         v-for="(item, index) in drawerLinks"
@@ -12,7 +12,7 @@
         v-list-item-action
           v-icon(v-if="item.icon") {{ item.icon }}
         v-list-item-content
-          v-list-item-title(v-text="item.title")
+          v-list-item-title.title(v-text="item.title")
         v-list-item-action
           v-icon mdi-open-in-new
 </template>

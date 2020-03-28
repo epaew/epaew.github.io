@@ -1,7 +1,7 @@
 <template lang="pug">
   v-app
     v-navigation-drawer(app clipped fixed v-model="isDrawerOpen")
-      v-subheader Contents
+      v-subheader.headline.font-italic.font-weight-bold Contents
       contents-list
       template(v-slot:append)
         v-divider
@@ -15,7 +15,7 @@
       nuxt
     v-footer(app absolute inset)
       span
-        p Copyright &copy; 2018-{{ currentYear }} {{ appName }}
+        p.caption Copyright &copy; 2018-{{ currentYear }} {{ appName }}
 </template>
 
 <script lang="ts">
