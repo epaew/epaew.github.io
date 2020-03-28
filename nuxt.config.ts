@@ -40,7 +40,19 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/axios'],
+  modules: [
+    '@nuxtjs/axios',
+    [
+      '@nuxtjs/sitemap', // always declare the sitemap module at end of array
+      {
+        hostname: 'https://www.epaew.net',
+        routes: [
+          { url: '/', changefreq: 'daily' },
+          { url: '/articles', changefreq: 'daily' },
+        ],
+      },
+    ],
+  ],
   /*
    ** vuetify module configuration
    ** https://github.com/nuxt-community/vuetify-module
