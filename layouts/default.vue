@@ -7,7 +7,7 @@
         v-divider
         links-list
     v-app-bar(app clipped-left fixed)
-      v-app-bar-nav-icon(v-if="!isDrawerOpen" @click.stop="toggleDrawer")
+      v-app-bar-nav-icon(aria-label="openDrawer" v-if="!isDrawerOpen" @click.stop="toggleDrawer")
       div(v-if="isDrawerOpen" :style="{ height: '48px', width: '48px', marginLeft: '-12px' }")
       v-toolbar-title
         h1 {{ appName }}
