@@ -13,31 +13,30 @@
               v-card-title.display-2 epaew
               v-card-subtitle Ryo&nbsp;Maeda / Web&nbsp;application&nbsp;developer
           v-col(cols=12 md=6)
-              v-list
-                v-list-item
-                  v-list-item-content
-                    v-list-item-title Age
-                    v-list-item-subtitle(v-text="age")
-                v-list-item
-                  v-list-item-content
-                    v-list-item-title Location
-                    v-list-item-subtitle Tokyo, Japan
-                v-list-item
-                  v-list-item-content
-                    v-list-item-title Certifications
-                    v-list-item-subtitle
-                      ul
-                        li(v-for="cert in certifications")
-                          .d-sm-inline-block {{ cert[0] }}
-                          .d-sm-inline-block.ml-2 {{ cert[1] }}
-                v-list-item
-                  v-list-item-content
-                    v-list-item-title Experiences
-                    v-list-item-subtitle
-                      ul: li(v-for="(values, key) in experiences")
-                        span {{ key }}
-                        ul: li(v-for="value in values") {{ value }}
-
+            v-list
+              v-list-item
+                v-list-item-content
+                  v-list-item-title Age
+                  v-list-item-subtitle(v-text="age")
+              v-list-item
+                v-list-item-content
+                  v-list-item-title Location
+                  v-list-item-subtitle Tokyo, Japan
+              v-list-item
+                v-list-item-content
+                  v-list-item-title Certifications
+                  v-list-item-subtitle
+                    ul
+                      li(v-for="cert in certifications")
+                        .d-sm-inline-block {{ cert[0] }}
+                        .d-sm-inline-block.ml-2 {{ cert[1] }}
+              v-list-item
+                v-list-item-content
+                  v-list-item-title Experiences
+                  v-list-item-subtitle
+                    ul: li(v-for="(values, key) in experiences")
+                      span {{ key }}
+                      ul: li(v-for="value in values") {{ value }}
 </template>
 
 <script lang="ts">
