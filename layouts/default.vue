@@ -1,6 +1,6 @@
 <template lang="pug">
   v-app
-    v-navigation-drawer(app clipped fixed v-model="isDrawerOpen")
+    v-navigation-drawer(app clipped fixed v-model="isDrawerOpen" :style="{ height: '100%' }")
       v-subheader.headline.font-italic.font-weight-bold Contents
       contents-list
       template(v-slot:append)
