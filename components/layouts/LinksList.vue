@@ -27,24 +27,24 @@ export default Vue.extend({
         {
           icon: 'mdi-twitter',
           title: 'Twitter',
-          to: 'https://twitter.com/epaew_dev'
+          to: 'https://twitter.com/epaew_dev',
         },
         {
           icon: 'mdi-github',
           title: 'GitHub',
-          to: 'https://github.com/epaew'
+          to: 'https://github.com/epaew',
         },
         {
           title: 'Qiita',
-          to: 'https://qiita.com/epaew_dev'
+          to: 'https://qiita.com/epaew_dev',
         },
         {
           title: 'Hatena Blog',
-          to: 'https://epaew.hatenablog.com/'
-        }
-      ]
+          to: 'https://epaew.hatenablog.com/',
+        },
+      ],
     }
-  }
+  },
 })
 </script>
 

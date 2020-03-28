@@ -45,7 +45,7 @@ import Vue from 'vue'
 
 export default Vue.extend({
   props: {
-    imageUrl: { type: String, required: true }
+    imageUrl: { type: String, required: true },
   },
   data() {
     return {
@@ -53,7 +53,7 @@ export default Vue.extend({
         ['2017 春', 'データベーススペシャリスト'],
         ['2016 秋', 'ネットワークスペシャリスト'],
         ['2015 秋', '応用情報技術者'],
-        ['2015 春', '基本情報技術者']
+        ['2015 春', '基本情報技術者'],
       ],
       experiences: {
         Languages: ['Ruby 2.1+', 'JavaScript/TypeScript'],
@@ -65,17 +65,17 @@ export default Vue.extend({
           'Sass (SCSS)',
           'Serverless Framework',
           'Webpack 4',
-          'etc.'
-        ]
-      }
+          'etc.',
+        ],
+      },
     }
   },
   computed: {
     age() {
       const diff = Date.now() - Date.parse('1990/12/27') // millisec
       return new Date(diff).getFullYear() - 1970
-    }
-  }
+    },
+  },
 })
 </script>
 

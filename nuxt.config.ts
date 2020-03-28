@@ -11,10 +11,10 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
-      }
+        content: process.env.npm_package_description || '',
+      },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
   /*
    ** Customize the progress-bar color
@@ -35,7 +35,7 @@ export default {
     '@nuxt/typescript-build',
     '@nuxtjs/eslint-module',
     '@nuxtjs/stylelint-module',
-    '@nuxtjs/vuetify'
+    '@nuxtjs/vuetify',
   ],
   /*
    ** Nuxt.js modules
@@ -48,9 +48,9 @@ export default {
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     theme: {
-      light: true
+      light: true,
     },
-    treeShake: true
+    treeShake: true,
   },
   /*
    ** Build configuration
@@ -66,7 +66,7 @@ export default {
    */
   typescript: {
     typeCheck: {
-      eslint: true
-    }
-  }
+      eslint: true,
+    },
+  },
 }

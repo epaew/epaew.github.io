@@ -20,10 +20,10 @@ export default Vue.extend({
       drawerContents: [
         { title: 'Welcome', to: '/' },
         { title: 'Articles', to: '/articles' },
-        { title: 'Works', to: '/works' }
-      ]
+        { title: 'Works', to: '/works' },
+      ],
     }
-  }
+  },
 })
 </script>
 

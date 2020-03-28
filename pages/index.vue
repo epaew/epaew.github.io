@@ -19,11 +19,11 @@ export default Vue.extend({
   async asyncData({ $axios }) {
     const githubUser = await $axios.$get('https://api.github.com/users/epaew')
     return {
-      imageUrl: githubUser.avatar_url
+      imageUrl: githubUser.avatar_url,
     }
   },
   head() {
     return { title: 'Welcome' }
-  }
+  },
 })
 </script>

@@ -32,19 +32,19 @@ export default Vue.extend({
   data(): DataType {
     return {
       appName: 'epaew.net',
-      isDrawerOpen: null
+      isDrawerOpen: null,
     }
   },
   computed: {
     currentYear() {
       return new Date().getFullYear()
-    }
+    },
   },
   methods: {
     toggleDrawer() {
       this.isDrawerOpen = !this.isDrawerOpen
-    }
-  }
+    },
+  },
 })
 </script>
 
