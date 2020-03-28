@@ -8,7 +8,7 @@
     v-card
       v-container.pa-0.mx-0
         v-row(no-gutters)
-          v-col(align-self="center" cols=12 md=6)
+          v-col(cols=12 md=6)
             v-img.align-end(:src="imageUrl")
               v-card-title.display-2 epaew
               v-card-subtitle Ryo&nbsp;Maeda / Web&nbsp;application&nbsp;developer
@@ -16,24 +16,24 @@
             v-list
               v-list-item
                 v-list-item-content
-                  v-list-item-title Age
-                  v-list-item-subtitle(v-text="age")
+                  v-list-item-title.subtitle-1 Age
+                  v-list-item-subtitle.subtitle-2(v-text="age")
               v-list-item
                 v-list-item-content
-                  v-list-item-title Location
-                  v-list-item-subtitle Tokyo, Japan
+                  v-list-item-title.subtitle-1 Location
+                  v-list-item-subtitle.subtitle-2 Tokyo, Japan
               v-list-item
                 v-list-item-content
-                  v-list-item-title Certifications
-                  v-list-item-subtitle
+                  v-list-item-title.subtitle-1 Certifications
+                  v-list-item-subtitle.subtitle-2
                     ul
                       li(v-for="cert in certifications")
                         .d-sm-inline-block {{ cert[0] }}
                         .d-sm-inline-block.ml-2 {{ cert[1] }}
               v-list-item
                 v-list-item-content
-                  v-list-item-title Experiences
-                  v-list-item-subtitle
+                  v-list-item-title.subtitle-1 Experiences
+                  v-list-item-subtitle.subtitle-2
                     ul: li(v-for="(values, key) in experiences")
                       span {{ key }}
                       ul: li(v-for="value in values") {{ value }}
@@ -80,13 +80,14 @@ export default Vue.extend({
 
 <style scoped lang="scss">
 @import '~vuetify/src/styles/settings/variables';
+$max-image-size: 445px;
 
 .v-dialog__content {
   & ::v-deep .v-dialog {
-    max-width: 460px;
+    max-width: $max-image-size;
 
     @media #{map-get($display-breakpoints, 'md-and-up')} {
-      max-width: 920px;
+      max-width: $max-image-size * 2;
     }
   }
 }
@@ -102,6 +103,13 @@ export default Vue.extend({
 
   &.btn:hover ::v-deep &__image {
     opacity: 0.8;
+  }
+}
+
+.v-list {
+  @media #{map-get($display-breakpoints, 'md-and-up')} {
+    max-height: $max-image-size;
+    overflow-y: scroll;
   }
 }
 </style>
