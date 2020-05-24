@@ -6,7 +6,7 @@
   "author": "epaew",
   "scripts": {
     "build": "nuxt-ts build",
-    "clean": "rimraf .nuxt/",
+    "clean": "rimraf .nuxt/ dist/",
     "dev": "nuxt-ts",
     "eslint": "eslint --ext .ts,.js,.vue --ignore-path .gitignore .",
     "eslint:fix": "eslint --fix --ext .ts,.js,.vue --ignore-path .gitignore .",
