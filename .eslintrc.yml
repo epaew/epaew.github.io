@@ -9,5 +9,8 @@ extends:
   - plugin:prettier/recommended
   - plugin:nuxt/recommended
 plugins:
-  - prettier
-rules: {}
+  - filenames
+rules:
+  filenames/match-regex:
+    - error
+    - '^[.-0-9a-z]+$'
