@@ -11,19 +11,19 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-import ProfileModal from '~/components/ProfileModal'
+import Vue from 'vue';
+import ProfileModal from '~/components/ProfileModal';
 
 export default Vue.extend({
   components: { ProfileModal },
   async asyncData({ $axios }) {
-    const githubUser = await $axios.$get('https://api.github.com/users/epaew')
+    const githubUser = await $axios.$get('https://api.github.com/users/epaew');
     return {
       imageUrl: githubUser.avatar_url,
-    }
+    };
   },
   head() {
-    return { title: 'Welcome' }
+    return { title: 'Welcome' };
   },
-})
+});
 </script>

@@ -19,13 +19,13 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-import { ContentsList, LinksList } from '@/components/layouts'
+import Vue from 'vue';
+import { ContentsList, LinksList } from '@/components/layouts';
 
 type DataType = {
-  appName: string
-  isDrawerOpen: boolean | null
-}
+  appName: string;
+  isDrawerOpen: boolean | null;
+};
 
 export default Vue.extend({
   components: { ContentsList, LinksList },
@@ -33,19 +33,19 @@ export default Vue.extend({
     return {
       appName: 'epaew.net',
       isDrawerOpen: null,
-    }
+    };
   },
   computed: {
     currentYear() {
-      return new Date().getFullYear()
+      return new Date().getFullYear();
     },
   },
   methods: {
     toggleDrawer() {
-      this.isDrawerOpen = !this.isDrawerOpen
+      this.isDrawerOpen = !this.isDrawerOpen;
     },
   },
-})
+});
 </script>
 
 <style scoped lang="scss">
