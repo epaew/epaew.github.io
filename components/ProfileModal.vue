@@ -40,7 +40,7 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import Vue from 'vue';
 
 export default Vue.extend({
   props: {
@@ -57,25 +57,17 @@ export default Vue.extend({
       experiences: {
         Languages: ['Ruby 2.1+', 'JavaScript/TypeScript'],
         Frameworks: ['Ruby on Rails 5+', 'Vue.js (Nuxt.js)', 'React.js'],
-        Others: [
-          'AWS Lambda',
-          'Docker',
-          'Git',
-          'Sass (SCSS)',
-          'Serverless Framework',
-          'Webpack 4',
-          'etc.',
-        ],
+        Others: ['AWS Lambda', 'Docker', 'Git', 'Sass (SCSS)', 'Serverless Framework', 'Webpack 4', 'etc.'],
       },
-    }
+    };
   },
   computed: {
     age() {
-      const diff = Date.now() - Date.parse('1990/12/27') // millisec
-      return new Date(diff).getFullYear() - 1970
+      const diff = Date.now() - Date.parse('1990/12/27'); // millisec
+      return new Date(diff).getFullYear() - 1970;
     },
   },
-})
+});
 </script>
 
 <style scoped lang="scss">

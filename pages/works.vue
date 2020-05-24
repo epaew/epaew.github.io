@@ -16,7 +16,7 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import Vue from 'vue';
 
 export default Vue.extend({
   data() {
@@ -24,8 +24,7 @@ export default Vue.extend({
       works: [
         {
           title: 'ecg',
-          description:
-            'ERB(eRuby) based, simple and powerful configration file generator for general purpose.',
+          description: 'ERB(eRuby) based, simple and powerful configration file generator for general purpose.',
           links: [
             {
               label: 'RubyGems.org',
@@ -39,8 +38,7 @@ export default Vue.extend({
         },
         {
           title: 'tmux-erb-parser',
-          description:
-            'A Tmux plugin for loading tmux.conf written in Ruby (eRuby) notation.',
+          description: 'A Tmux plugin for loading tmux.conf written in Ruby (eRuby) notation.',
           links: [
             {
               label: 'RubyGems.org',
@@ -53,10 +51,10 @@ export default Vue.extend({
           ],
         },
       ],
-    }
+    };
   },
   head() {
-    return { title: 'Works' }
+    return { title: 'Works' };
   },
-})
+});
 </script>

@@ -11,8 +11,7 @@ export default {
       {
         rel: 'stylesheet',
         type: 'text/css',
-        href:
-          'https://fonts.googleapis.com/css?family=Allura|Dancing+Script|Noto+Sans+JP&display=swap',
+        href: 'https://fonts.googleapis.com/css?family=Allura|Dancing+Script|Noto+Sans+JP&display=swap',
       },
     ],
     meta: [
@@ -41,12 +40,7 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: [
-    '@nuxt/typescript-build',
-    '@nuxtjs/eslint-module',
-    '@nuxtjs/stylelint-module',
-    '@nuxtjs/vuetify',
-  ],
+  buildModules: ['@nuxt/typescript-build', '@nuxtjs/eslint-module', '@nuxtjs/stylelint-module', '@nuxtjs/vuetify'],
   /*
    ** Nuxt.js modules
    */
@@ -92,4 +86,4 @@ export default {
       eslint: true,
     },
   },
-}
+};
