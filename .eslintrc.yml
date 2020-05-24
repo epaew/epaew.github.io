@@ -4,6 +4,8 @@ env:
   node: true
 extends:
   - '@nuxtjs/eslint-config-typescript'
+  - plugin:import/recommended
+  - plugin:import/typescript
   - prettier
   - prettier/vue
   - plugin:prettier/recommended
@@ -14,3 +16,11 @@ rules:
   filenames/match-regex:
     - error
     - '^[.-0-9a-z]+$'
+settings:
+  import/resolver:
+    nuxt:
+      extensions:
+        - .vue
+        - .ts
+        - .js
+        - .json
