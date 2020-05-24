@@ -1,3 +1,3 @@
-import ContentsList from './ContentsList.vue';
-import LinksList from './LinksList.vue';
+import ContentsList from './contents-list.vue';
+import LinksList from './links-list.vue';
 export { ContentsList, LinksList };
