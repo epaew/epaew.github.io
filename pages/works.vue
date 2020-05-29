@@ -23,6 +23,20 @@ export default Vue.extend({
     return {
       works: [
         {
+          title: 'eslint-plugin-filenames-simple',
+          description: 'An ESLint plugin to check filenames with simple configuration.',
+          links: [
+            {
+              label: 'npmjs.com',
+              href: 'https://www.npmjs.com/package/eslint-plugin-filenames-simple',
+            },
+            {
+              label: 'GitHub',
+              href: 'https://github.com/epaew/eslint-plugin-filenames-simple',
+            },
+          ],
+        },
+        {
           title: 'ecg',
           description: 'ERB(eRuby) based, simple and powerful configration file generator for general purpose.',
           links: [
