@@ -23,6 +23,24 @@ export default Vue.extend({
     return {
       works: [
         {
+          title: 'react-liff',
+          description: 'A react context provider for LIFF (LINE Front-end Framework)',
+          links: [
+            {
+              label: 'npmjs.com',
+              href: 'https://www.npmjs.com/package/react-liff',
+            },
+            {
+              label: 'GitHub',
+              href: 'https://github.com/epaew/react-liff',
+            },
+            {
+              label: 'Demo App',
+              href: 'https://liff.line.me/1654340399-ME0xEG8k',
+            },
+          ],
+        },
+        {
           title: 'eslint-plugin-filenames-simple',
           description: 'An ESLint plugin to check filenames with simple configuration.',
           links: [
