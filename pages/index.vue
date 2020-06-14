@@ -12,7 +12,7 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import ProfileModal from '~/components/profile-modal';
+import ProfileModal from '~/components/ProfileModal';
 
 export default Vue.extend({
   components: { ProfileModal },

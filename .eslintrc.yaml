@@ -6,16 +6,11 @@ extends:
   - '@nuxtjs/eslint-config-typescript'
   - plugin:import/recommended
   - plugin:import/typescript
+  - plugin:filenames-simple/recommended-vue
   - prettier
   - prettier/vue
   - plugin:prettier/recommended
   - plugin:nuxt/recommended
-plugins:
-  - filenames
-rules:
-  filenames/match-regex:
-    - error
-    - '^[.-0-9a-z]+$'
 settings:
   import/resolver:
     nuxt:
@@ -24,3 +19,12 @@ settings:
         - .ts
         - .js
         - .json
+overrides:
+  - files:
+      - layouts/*.vue
+    plugins:
+      - filenames-simple
+    rules:
+      filenames-simple/naming-convention:
+        - error
+        - rule: kebab-case
