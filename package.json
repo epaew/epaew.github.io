@@ -33,7 +33,7 @@
     "@vue/test-utils": "^1.0.3",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^26.1.0",
-    "eslint": "^7.4.0",
+    "eslint": "^7.5.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-import-resolver-nuxt": "^1.0.1",
     "eslint-plugin-filenames-simple": "^0.4.0",
