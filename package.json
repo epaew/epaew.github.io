@@ -32,7 +32,7 @@
     "@nuxtjs/vuetify": "^1.11.2",
     "@vue/test-utils": "^1.0.3",
     "babel-eslint": "^10.0.1",
-    "babel-jest": "^26.1.0",
+    "babel-jest": "^26.2.2",
     "eslint": "^7.6.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-import-resolver-nuxt": "^1.0.1",
