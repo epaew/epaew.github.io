@@ -22,7 +22,7 @@
     "@nuxt/typescript-runtime": "^0.4.10",
     "@nuxtjs/axios": "^5.12.3",
     "@nuxtjs/sitemap": "^2.4.0",
-    "nuxt": "^2.14.9"
+    "nuxt": "^2.14.11"
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^1.0.3",
