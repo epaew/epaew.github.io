@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^0.4.10",
-    "@nuxtjs/axios": "^5.12.4",
+    "@nuxtjs/axios": "^5.12.5",
     "@nuxtjs/sitemap": "^2.4.0",
     "nuxt": "^2.14.12"
   },
