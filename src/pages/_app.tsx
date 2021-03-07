@@ -13,6 +13,12 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
       <Head>
         <title>epaew.net</title>
         <link rel="icon" href="/favicon.ico" />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Allura|Kite+One|Noto+Sans+JP&display=swap"
+        />
       </Head>
       <BaseLayout>
         <Component {...pageProps} />
