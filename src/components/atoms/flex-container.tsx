@@ -8,6 +8,8 @@ type FlexContainerProps = {
   flexWrap?: Property.FlexWrap;
   justifyContent?: Property.JustifyContent;
   justifyItems?: Property.JustifyItems;
+  margin?: number | string | number[];
+  padding?: number | string | number[];
 };
 
 export const FlexContainer = styled.div<FlexContainerProps>(({
@@ -17,6 +19,9 @@ export const FlexContainer = styled.div<FlexContainerProps>(({
   flexWrap,
   justifyContent,
   justifyItems,
+  margin,
+  padding,
+  theme,
 }) => ({
   alignContent,
   alignItems,
@@ -25,4 +30,7 @@ export const FlexContainer = styled.div<FlexContainerProps>(({
   flexWrap,
   justifyContent,
   justifyItems,
+  margin: margin && theme.spacing(...[margin].flat()),
+  padding: padding && theme.spacing(...[padding].flat()),
+  width: '100%',
 }));
