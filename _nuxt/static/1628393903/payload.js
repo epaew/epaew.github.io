@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/", {data:[{imageUrl:"https:\u002F\u002Favatars.githubusercontent.com\u002Fu\u002F6658740?v=4"}],fetch:{},mutations:void 0});
