@@ -82,8 +82,6 @@ export default {
    ** TypeScript configuration
    */
   typescript: {
-    typeCheck: {
-      eslint: true,
-    },
+    typeCheck: true,
   },
 };
