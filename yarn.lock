@@ -3621,11 +3621,6 @@ core-js@^2.6.5:
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.12.tgz#d9333dfa7b065e347cc5682219d6f690859cc2ec"
   integrity sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==
 
-core-js@^3.7.0:
-  version "3.20.2"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.20.2.tgz#46468d8601eafc8b266bd2dd6bf9dee622779581"
-  integrity sha512-nuqhq11DcOAbFBV4zCbKeGbKQsUDRqTX0oqx7AttUBuqe3h20ixsE039QHelbL6P4h+9kytVqyEtyZ6gsiwEYw==
-
 core-util-is@1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
@@ -4550,12 +4545,11 @@ eslint-plugin-es@^3.0.0:
     eslint-utils "^2.0.0"
     regexpp "^3.0.0"
 
-eslint-plugin-filenames-simple@^0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-filenames-simple/-/eslint-plugin-filenames-simple-0.6.0.tgz#94401250dd92a8894b8c095981294f960451697d"
-  integrity sha512-KKu/Lv8F3T3zDTwj167JEhm8uzL/HyyJDhQa6BA2xvXQvuUaHDAfF+apJkxxjHmU34W//Yf88Qr9cRWNkzZkgw==
+eslint-plugin-filenames-simple@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-filenames-simple/-/eslint-plugin-filenames-simple-0.7.0.tgz#cff3c48de89ff543ef8f724dde135daac7ae5714"
+  integrity sha512-CbiYl+XJtVI+JwIf573c9tENDYwngX7iYgPVJn6LExlXkdPhLKgBa4Rcht/lNBdgT1C5k3c+6eK7NePxs6Kakg==
   dependencies:
-    core-js "^3.7.0"
     pluralize "^8.0.0"
 
 eslint-plugin-import@^2.23.3, eslint-plugin-import@^2.24.2:
