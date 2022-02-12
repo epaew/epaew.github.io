@@ -27,3 +27,10 @@ overrides:
       filenames-simple/naming-convention:
         - error
         - rule: kebab-case
+  - files:
+      - layouts/*.vue
+      - pages/*.vue
+    plugins:
+      - vue
+    rules:
+      vue/multi-word-component-names: warn
