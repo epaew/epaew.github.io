@@ -1,8 +1,9 @@
 import styled from '@emotion/styled';
 import { Property } from 'csstype';
-import { FC } from 'react';
+import { FC, ReactNode } from 'react';
 
 interface TypographyProps {
+  children: ReactNode;
   color?: Property.Color;
   fontFamily?: Property.FontFamily;
   fontSize?: `${number}rem`;

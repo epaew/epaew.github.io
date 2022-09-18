@@ -1,9 +1,13 @@
-import { FC } from 'react';
+import { FC, ReactNode } from 'react';
 
 import { Main, Root } from '../atoms';
 import { AppFooter, AppHeader } from '../organisms';
 
-export const BaseLayout: FC = ({ children }) => {
+interface BaseLayoutProps {
+  children: ReactNode;
+}
+
+export const BaseLayout: FC<BaseLayoutProps> = ({ children }) => {
   return (
     <Root>
       <AppHeader />
